@@ -1,4 +1,5 @@
 import SlimSelect from 'slim-select';
+import '/node_modules/slim-select/dist/slimselect.css';
 import axios from 'axios';
 import { Report } from 'notiflix/build/notiflix-report-aio';
 
