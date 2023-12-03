@@ -53,7 +53,7 @@ function getCatByBreed(breedId) {
         throw 'The information is not found!';
       }
       infoBox.classList.remove('hidden');
-      infoBox.innerHTML = creaateMarkUp(data);
+      infoBox.innerHTML = createMarkUp(data);
     })
     .catch(err => {
       if (typeof err === 'string') {
@@ -70,7 +70,7 @@ function getCatByBreed(breedId) {
     });
 }
 
-function creaateMarkUp(arr) {
+function createMarkUp(arr) {
   return arr
     .map(
       ({ breeds, url }) => `
